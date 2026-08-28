@@ -1,0 +1,92 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "data",
+    "source": "$1                   -`\n$1                  .o+`\n$1                 `ooo/\n$1                `+oooo:\n$1               `+oooooo:\n$2               -+oooooo+:\n$2             `/:-:++oooo+:\n$2            `/++++/+++++++:\n$2           `/++++++++++++++:\n$3          `/+++ooooooooooooo/`\n$3         ./ooosssso++osssssso+`\n$3        .ooosssso-````.-/osssss+`\n$4       -osssssso.      .osssssso.\n$4      :osssssss/        /osssssss:\n$5     /osssssss/          /osssssss/\n$5    /osssssso+/:_       _:+osssssso+\n$6   +sso+:-`                  `-/+oso:\n$7  ++:.                            `-/+/",
+
+    "color": {
+      "1": "#5CCFE6",
+      "2": "#72D9EC",
+      "3": "#8BE2F2",
+      "4": "#A8E9F5",
+      "5": "#C2F1F8",
+      "6": "#DCF8FA",
+      "7": "#F4FDFF"
+    },
+
+    "padding": {
+      "top": 1,
+      "right": 3
+    }
+  },
+
+  "display": {
+    "separator": " "
+  },
+
+  "modules": [
+    "break",
+
+    {
+      "type": "title",
+      "color": {
+        "user": "#A8E9F5",
+        "at": "#DCF8FA",
+        "host": "#72D9EC"
+      }
+    },
+
+    "break",
+
+    {
+      "type": "kernel",
+      "key": "󰣇",
+      "keyColor": "#72D9EC",
+      "format": "{release}"
+    },
+
+    {
+      "type": "cpu",
+      "key": "",
+      "keyColor": "#C2F1F8"
+    },
+
+    {
+      "type": "board",
+      "key": "󰚗",
+      "keyColor": "#8BE2F2"
+    },
+
+    {
+      "type": "memory",
+      "key": "",
+      "keyColor": "#DCF8FA",
+      "format": "{used} / {total} ({percentage})"
+    },
+
+    {
+      "type": "disk",
+      "key": "",
+      "keyColor": "#A8E9F5"
+    },
+
+    "break",
+
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "block": {
+        "color": [
+          "#5CCFE6",
+          "#72D9EC",
+          "#8BE2F2",
+          "#A8E9F5",
+          "#C2F1F8",
+          "#DCF8FA",
+          "#F4FDFF"
+        ]
+      }
+    }
+  ]
+}
