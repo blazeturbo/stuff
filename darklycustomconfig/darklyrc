@@ -1,0 +1,16 @@
+[Common]
+ButtonHeight=2
+ButtonWidth=2
+CornerRadius=6
+FancyMargins=false
+MenuItemHeight=3
+ScrollBarTransient=true
+
+[Style]
+AnimationsDuration=224
+DisableDolphinUrlNavigatorBackground=false
+RoundedRubberBandFrame=false
+TabBarAltStyle=true
+TabsHeight=-19
+ViewDrawFocusIndicator=false
+WidgetDrawShadow=false
