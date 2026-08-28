@@ -1,1 +1,1 @@
-rw rootflags=subvol=@ loglevel=3 quiet mitigations=off
+rw rootflags=subvol=@ loglevel=3 quiet mitigations=off isolcpus=managed_irq,2-11 nohz_full=2-11 rcu_nocbs=2-11 irqaffinity=0,1
