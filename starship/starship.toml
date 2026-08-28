@@ -1,0 +1,189 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](color_cyan)\
+$os\
+$username\
+[](bg:color_ice fg:color_cyan)\
+$directory\
+[](fg:color_ice bg:color_sky)\
+$git_branch\
+$git_status\
+[](fg:color_sky bg:color_blue)\
+$c\
+$cpp\
+$rust\
+$golang\
+$nodejs\
+$bun\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:color_blue bg:color_navy)\
+$docker_context\
+$conda\
+$pixi\
+[](fg:color_navy bg:color_dark)\
+$time\
+[ ](fg:color_dark)\
+$line_break$character"""
+
+palette = 'wallpaper_blue'
+
+[palettes.wallpaper_blue]
+
+# Core background tones
+color_dark = '#0b1020'          # Deep navy
+color_navy = '#15213a'          # Blue-black
+color_blue_dark = '#203454'     # Dark blue
+
+# Main wallpaper blues
+color_blue = '#4fa9dc'          # Medium cool blue
+color_sky = '#6fc7f3'           # Light sky blue
+color_cyan = '#80ddff'          # Bright cyan
+
+# Highlights
+color_ice = '#a8e9ff'           # Icy blue
+color_whiteblue = '#d8f6ff'     # Very pale blue
+
+# Text
+color_fg0 = '#e8f7ff'
+
+# Status colors
+color_green = '#9be7c4'
+color_red = '#ff8fa8'
+color_purple = '#aebeff'
+
+
+[os]
+disabled = false
+style = "bg:color_cyan fg:color_dark"
+
+[os.symbols]
+Arch = "󰣇"
+
+
+[username]
+show_always = true
+style_user = "bg:color_cyan fg:color_dark"
+style_root = "bg:color_cyan fg:color_dark"
+format = '[ $user ]($style)'
+
+
+[directory]
+style = "fg:color_dark bg:color_ice"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+
+[git_branch]
+symbol = ""
+style = "bg:color_sky"
+format = '[[ $symbol $branch ](fg:color_dark bg:color_sky)]($style)'
+
+[git_status]
+style = "bg:color_sky"
+format = '[[($all_status$ahead_behind )](fg:color_dark bg:color_sky)]($style)'
+
+
+[nodejs]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[bun]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[c]
+symbol = " "
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[cpp]
+symbol = " "
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[php]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[java]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+[python]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_dark bg:color_blue)]($style)'
+
+
+[docker_context]
+symbol = ""
+style = "bg:color_navy"
+format = '[[ $symbol( $context) ](fg:color_fg0 bg:color_navy)]($style)'
+
+[conda]
+style = "bg:color_navy"
+format = '[[ $symbol( $environment) ](fg:color_fg0 bg:color_navy)]($style)'
+
+[pixi]
+style = "bg:color_navy"
+format = '[[ $symbol( $version)( $environment) ](fg:color_fg0 bg:color_navy)]($style)'
+
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_dark"
+format = '[[  $time ](fg:color_fg0 bg:color_dark)]($style)'
+
+
+[line_break]
+disabled = false
+
+
+[character]
+disabled = false
+
+success_symbol = '[](bold fg:color_cyan)'
+error_symbol = '[](bold fg:color_red)'
+
+vimcmd_symbol = '[](bold fg:color_cyan)'
+vimcmd_replace_one_symbol = '[](bold fg:color_sky)'
+vimcmd_replace_symbol = '[](bold fg:color_sky)'
+vimcmd_visual_symbol = '[](bold fg:color_ice)'
