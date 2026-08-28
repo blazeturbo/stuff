@@ -1,0 +1,1 @@
+yeah, basically just system24 but with custom colors
