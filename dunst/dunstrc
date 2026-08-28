@@ -1,0 +1,68 @@
+[global]
+    font = DM Mono 10
+
+    width = 360
+    height = 120
+
+    origin = top-right
+    offset = 18x18
+
+    corner_radius = 12
+
+    frame_width = 1
+    frame_color = "#80ddff"
+
+    background = "#0b1020"
+    foreground = "#e8f7ff"
+
+    padding = 12
+    horizontal_padding = 14
+    text_icon_padding = 12
+
+    separator_height = 0
+
+    markup = full
+
+    format = "<span foreground='#a8e9ff'><b>%s</b></span>\n<span foreground='#e8f7ff'>%b</span>"
+
+    icon_position = left
+    min_icon_size = 42
+    max_icon_size = 48
+
+    follow = none
+
+    stack_duplicates = true
+    hide_duplicate_count = true
+    sort = urgency
+
+    mouse_left_click = close_current
+    mouse_middle_click = do_action
+    mouse_right_click = close_all
+
+    timeout = 6
+    pause_on_mouse_over = true
+
+    transparency = 0
+
+    separator_color = "#203454"
+
+
+[urgency_low]
+    background = "#15213a"
+    foreground = "#a8e9ff"
+    frame_color = "#4fa9dc"
+    timeout = 4
+
+
+[urgency_normal]
+    background = "#0b1020"
+    foreground = "#e8f7ff"
+    frame_color = "#80ddff"
+    timeout = 6
+
+
+[urgency_critical]
+    background = "#0b1020"
+    foreground = "#e8f7ff"
+    frame_color = "#ff8fa8"
+    timeout = 0
